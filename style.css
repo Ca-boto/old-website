@@ -431,3 +431,13 @@ footer #social-media-footer ul li{
         font-size: 20px;
     }
 }
+
+@media (max-width: 400px){
+    #banner{
+        height: 50vh;
+        width: auto;
+    }
+    h1 {
+        padding: 80px 0 0 0;
+    }
+}
