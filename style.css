@@ -1,0 +1,422 @@
+body {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+}
+
+h1 {
+    padding: 8px;
+    font-size: 80px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+p {
+    line-height: 1.5;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+main {
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('PBS Assets/pretty.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: aliceblue;
+}
+
+nav {
+    height: 130px;
+    background-color: rgb(15, 101, 122);
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav a{
+    padding: 0 25px;
+    color: aliceblue;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+#logo-img{
+    display: flex;
+    height: 100%;
+    padding: 0 32px;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+}
+
+#logo-img img{
+    height: 100px;
+}
+
+#menu-icon {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 4px;
+    transition: .4s;
+    display: none;
+}
+
+#slideout-menu{
+    display: none;
+    background-color: rgb(15, 101, 122);
+    z-index: 100;
+    position: fixed;
+    transition: .4s;
+    margin-top: 120px;
+    width: 100%;
+    text-align: center; 
+    opacity: 0;
+    pointer-events:none;
+}
+
+#sliedout-menu ul{
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slideout-menu ul li{
+    list-style: none;
+    padding: 8px;
+}
+
+#slideout-menu a{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+    transition: all .4s;
+    padding: 70px 0 25px 0;
+}
+
+.section-heading:hover{
+    color: rgb(37, 149, 205);
+}
+
+#section-about p{
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#section-about a{
+    margin: 8px;
+    text-align: center;
+}
+
+.card-image{
+    transition: .4s;
+    max-width: 550px;
+}
+
+.card-image:hover{
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description{
+    padding: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+.btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid rgb(37, 149, 205);
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background: white;
+    color: rgb(37, 149, 205);
+}
+
+footer{
+    background-color: rgb(15, 101, 122);
+    padding: 8px;
+    color: aliceblue;
+    display: flex;
+}
+
+footer a{
+    color: aliceblue;
+}
+
+footer #left-footer{
+    flex: 1;
+    border-right: 1px solid aliceblue;
+    padding-left: 32px;
+    border-bottom: none;
+}
+
+footer #left-footer h3{
+    font-size: x-large;
+}
+
+footer #left-footer ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer{
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer #right-footer h3{
+    font-size: x-large;
+}
+
+footer #social-media-footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer ul li{
+    font-size: 48px;
+    padding: 16px;
+    transition: .4s;
+}
+
+/* Blog Page */
+
+.page-heading{
+    display: inline-block;
+    padding: 4px 32px;
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+    transition: all .4s;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.page-heading:hover{
+    color: rgb(37, 149, 205);
+}
+
+.card-meta{
+    color: #777;
+    font-size: 16px;
+    padding-left: 8px;
+    font-family: 'Caveat', cursive;
+}
+
+.pagination{
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pagination a{
+    display: inline-block;
+    padding: 8px 16px;
+    transition: .4s;
+}
+
+.pagination a:hover{
+    text-decoration: underline;
+}
+
+/*Single Blogpost*/
+
+#post-container{
+    display: flex;
+}
+
+#blog-post{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#blog-post .card{
+    width: 100%;
+}
+
+#blog-post .card-image:hover{
+    box-shadow: none;
+}
+
+/*sidebar*/
+
+#sidebar{
+    background-color: rgb(15, 101, 122); ;
+    flex: 1;
+    padding: 8px 16px;
+    color: aliceblue; 
+    border-bottom: 1px solid white;
+}
+
+/*Guidlines Page*/
+
+.page-title{
+    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+    transition: all .4s;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+/*About Page*/
+
+#about-page{
+    display: inline-block;
+    text-align: center;
+    font-size: large;
+    font-family: 'Nanum Brush Script', cursive;
+    padding: 0 0 64px 0;
+}
+
+/*Media Queries*/
+
+@media (max-width:900px){
+    nav ul{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+    }
+
+    #slideout-menu{
+        display: block;
+    }
+
+    #blost-post{
+        width: 100%;
+    }
+
+    #sidebar{
+        display: none;
+    }
+}
+
+@media(max-width:719px){
+    main{
+        width: 95%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .card,
+    .card .card-image img{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #left-footer{
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+        border-bottom: 1px solid aliceblue;
+        padding-bottom: 20px;
+    }
+}
+
+@media(min-width:720px){
+    main{
+        width:95%
+    }
+
+    card{
+        width: 45%;
+    }
+
+    card card-image img{
+        width: 100%;
+    }
+}
+
+@media(min-width:1200px){
+    main{
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    #banner h3 {
+      font-size: 20px;
+    }
+  
+    .card {
+      text-align: center;
+    }
+  
+    #logo-img {
+      padding: 0;
+    }
+  }
