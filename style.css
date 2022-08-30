@@ -422,3 +422,12 @@ footer #social-media-footer ul li{
         padding: 0;
       }
   }
+
+@media (max-width: 500px){
+    h1 {
+        font-size: 24px;
+    }
+    #banner h2{
+        font-size: 20px;
+    }
+}
