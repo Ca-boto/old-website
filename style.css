@@ -399,11 +399,7 @@ footer #social-media-footer ul li{
     }
 }
 
-@media (max-width: 600px) {
-    main {
-      width: 100%;
-    }
-  
+@media (max-width: 700px) {
     h1 {
       font-size: 48px;
     }
@@ -411,12 +407,18 @@ footer #social-media-footer ul li{
     #banner h3 {
       font-size: 20px;
     }
-  
+  }
+
+  @media (max-width: 600px){
+    main {
+        width: 100%;
+      }
+    
     .card {
-      text-align: center;
-    }
-  
-    #logo-img {
-      padding: 0;
-    }
+        text-align: center;
+      }
+    
+      #logo-img {
+        padding: 0;
+      }
   }
